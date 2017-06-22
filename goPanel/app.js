@@ -9,8 +9,8 @@ var mongoose = require('mongoose');
 /* GLOBAL VARS */
 global.secret_diggest = "61b94161-c9c7-475f-b7f2-62fa58fef871";
 global.incial_path = __dirname;
-global.url_server = "http://localhost:3000/";
-global.url_server_image = "http://localhost:3000/img/";
+global.url_server = "http://104.196.65.184:3000/";
+global.url_server_image = "http://104.196.65.184:3000/img/";
 /* ROUTES */
 var routes = require('./routes/index');
 
