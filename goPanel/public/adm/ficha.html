@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TFC Deportes - Ficha usuario</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/vendor.css" />
+	<link rel="stylesheet" href="css/app-blue.css" />
+	<link rel="stylesheet" href="css/style.css" />	
+</head>	
+<body class="">
+	<nav class="navbar topnav-navbar navbar-fixed-top" role="navigation">
+		<div class="navbar-header text-center">
+			<button id="showMenu"type="button" class="navbar-toggle"  >
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="home.html"> TFC Deportes </a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<form class="navbar-form navbar-left" role="search">
+				<span class="glyphicon glyphicon-search"></span>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="">
+				</div>			
+			</form>
+			<ul class="nav navbar-nav">
+				
+			</ul>
+			<ul class="nav navbar-nav pull-right navbar-right">	
+				<li class="dropdown color-picker">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<span><i class="fa fa-circle"></i></span>
+					</a>
+					<ul class="dropdown-menu pull-right animated fadeIn" role="menu">
+						<li class="padder-h-xs">
+							<table class="table color-swatches-table text-center no-m-b">
+								<tr>
+									<td class="text-center colorr">
+										<a href="#" data-theme="blue" class="theme-picker">
+											<i class="fa fa-circle blue-base"></i>
+										</a>
+									</td>
+									<td class="text-center colorr">
+										<a href="#" data-theme="green" class="theme-picker">
+											<i class="fa fa-circle green-base"></i>
+										</a>
+									</td>
+									<td class="text-center colorr">
+										<a href="#" data-theme="red" class="theme-picker">
+											<i class="fa fa-circle red-base"></i>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center colorr">
+										<a href="#" data-theme="purple" class="theme-picker">
+											<i class="fa fa-circle purple-base"></i>
+										</a>
+									</td>
+									<td class="text-center color">
+										<a href="#" data-theme="midnight-blue" class="theme-picker">
+											<i class="fa fa-circle midnight-blue-base"></i>
+										</a>
+									</td>
+									<td class="text-center colorr">
+										<a href="#" data-theme="lynch" class="theme-picker">
+											<i class="fa fa-circle lynch-base"></i>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<span> Clientes </span>
+					</a>
+				</li> 
+				<li class="dropdown admin-dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<img src="images/flat-avatar.png" class="topnav-img" alt=""><span class="hidden-sm">Usuario TFC</span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="profile.html">Perfil</a></li>
+						<li><a href="index.html">Cerrar sesión</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+		<ul class="nav navbar-nav pull-right hidd">	
+			<li class="dropdown admin-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					<img src="images/flat-avatar.png" class="topnav-img" alt="">
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="profile.html">Perfil</a></li>
+					<li><a href="index.html">Cerrar sesión</a></li>
+				</ul>
+			</li>	
+		</ul>
+	</nav>	
+	<aside id="sidebar">
+	<div class="sidenav-outer">
+		<div class="side-menu">
+			<div class="menu-body">
+				<ul class="nav nav-pills nav-stacked sidenav">
+					<li >
+						<a href="home.html">
+							<span class="glyphicon glyphicon-home"></span>
+						</a>
+						<ul class="nested-dropdown animated fadeIn">
+							<li><a href="home.html">Home</a></li>
+						</ul>
+					</li>
+					<li >
+						<a href="clientes.html">
+							<span class="glyphicon glyphicon glyphicon-folder-open"></span>
+						</a>
+						<ul class="nested-dropdown animated fadeIn">
+							<li><a  href="clientes.html">Clientes</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</aside>
+<!--CONTENDEDOR GENERAL -->
+	<section id="body-container" class="animation">
+		<div class="conter-wrapper home-container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Ficha</h3>
+				</div>
+				<div class="col-md-6">
+					<h3 class="pull-right">
+						<button type="button" class="btn btn-success">+ Nuevo paciente</button>
+						<button type="button" class="btn btn-warning">+ Descargar Ficha</button> 
+						<button type="button" class="btn btn-warning">+ Eliminar Ficha</button>
+					</h3>
+				</div>
+			</div>
+		</div>
+<!-- FICHA PECIENTE TITULO-->
+		<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="invoice">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="#"><span class="text text-muted">&nbsp;Freddy Mercury</span></a>
+				</div>
+				<div class="col-md-6 text-right">
+					<p class="text-dark">
+						#1233219 / 01 Jan 2014  <br><small class="text-light"> Lorem ipsum dolor sit amet </small>
+					</p>
+				</div>
+			</div>
+		</div>
+<!-- ANTECEDENTES PERSONALES -->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2 class="panel-title"><strong>ANTECEDENTES PERSONALES</strong></h2>
+						</div>
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th>Rut</th>
+									<td>16.645.598-2</td>
+									<th>Mail</th>
+									<td>contacto@mail.com</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Sexo</th>
+									<td>Masculino</td>
+									<th>ID</th>
+									<td>282584956</td>
+									
+								</tr>
+								<tr>
+									<th>Edad</th>
+									<td>29</td>
+									<th>Dirección</th>
+									<th>Rojas Magallanes #2548</th>
+									
+								</tr>
+								<tr>
+									<th>Teléfono</th>
+									<td>+56 9 987 48695</td>
+									<th>Grupo</th>
+									<th>4° básico A</th>
+									
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="panel-heading">
+							<h2 class="panel-title"><strong>ANTECEDENTES MÉDICOS</strong></h2>
+						</div>
+						<table class="table table-bordered table-striped ant-med">
+							<thead>
+								<tr>
+									<th>Disnea / Fatiga desproporcionada con ejercicio</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+									<th>Muerte súbita (cardiovascular) en familiares de primer grado< 50 años</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Antecedente  cardiacos</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+									<th>Enfermedades previas</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>Medicamentos y suplementos</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+									<th>Cirujías</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>Medicamentos / Suplementos</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+										
+									</td>
+									<th>Diagnóstico</th>
+									<td>
+										<p>SI / NO</p>
+										<div class="onoffswitch">
+											<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch3" checked="">
+											<label class="onoffswitch-label" for="switch3">
+												<span class="onoffswitch-inner"></span>
+												<span class="onoffswitch-switch"></span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<!--DIAGNOSTICO -->
+								
+								<!--FIN DIAGNOSTICO -->
+							</tbody>
+						</table>
+
+							<div class="panel-heading">
+							<h2 class="panel-title"><strong>DIAGNÓSTICO</strong></h2>
+						</div>
+						<table class="table table-bordered table-striped">
+							<tbody>
+								<tr>
+									<tH>
+											<label for="inputtext" class="col-sm-2 control-label">Diagnóstico</label>
+									</tH>
+									<td colspan="3" class="diagnostico">
+										<input type="text" class="form-control" id="rounded"placeholder="Escriba aquí su diagnóstico">
+									</td>
+									
+								</tr>
+								<tr>
+									<th>Seleccione estatus</th>
+									<td>
+									<select class="form-control">
+										<option>Apto</option>
+										<option>Con observaciones</option>
+										<option>No Apto</option>
+									</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<div class="panel-heading">
+							<h2 class="panel-title"><strong>DATOS MAQUINA</strong></h2>
+						</div>
+						<table class="table table-bordered table-striped">
+							<tbody>
+								<tr>
+									<th>HR =  </th>
+									<td>25686489</td>
+									<th>P =</th>
+									<td>25686489</td>
+								</tr>
+								<tr>
+									<th>PR = </th>
+									<td>125687987</td>
+									<th>T = </th>
+									<td>25686489</td>
+								</tr>
+								<tr>
+									<th>QRSTime = </th>
+									<td>256485654</td>
+									<th>RV5 = </th>
+									<td>25686489</td>
+								</tr>
+								<tr>
+									<th>QRSDegree =</th>
+									<td>29654987</td>
+									<th>SV1 =</th>
+									<td>25686489</td>
+								</tr>
+								<tr>
+									<th>QT = </th>
+									<td>654987876</td>
+									<th>RV5+SV1 =</th>
+									<td>25686489</td>
+								</tr>
+								<tr>
+									<th>QTC =</th>
+									<td>23165486</td>
+									<th></th>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 examen">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h2 class="panel-title"><strong>EXAMEN</strong></h2>
+							</div>
+							<img src="images/examen.jpg" alt="">
+						</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+</section>
+<!-- FIN BODY CONTENDEDOR -->
+
+<script src="vendor/ckeditor/ckeditor.js" type="text/javascript"></script>			
+<script src="js/vendor.js"></script>
+
+<script>
+	$(function(){
+		$('#calendar2').fullCalendar({
+			eventClick: function(calEvent, jsEvent, view) {
+				alert('Event: ' + calEvent.title);
+				alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+				alert('View: ' + view.name);  
+			}
+		});
+
+		$('#rtlswitch').click(function() {
+			console.log('hello');
+			$('body').toggleClass('rtl');
+
+			var hasClass = $('body').hasClass('rtl');
+
+			$.get('/api/set-rtl?rtl='+ (hasClass ? 'rtl': ''));
+
+		});   
+		$('.theme-picker').click(function() {
+			changeTheme($(this).attr('data-theme'));
+		}); 	
+		$('#showMenu').click(function() {
+		    $('body').toggleClass('push-right');
+		});	
+		
+	});
+function changeTheme(the) {
+	$("#current-theme").remove();
+	$('<link>')
+	.appendTo('head')
+	.attr('id','current-theme')
+	.attr({type : 'text/css', rel : 'stylesheet'})
+	.attr('href', '/css/app-'+the+'.css');
+}
+</script>
+
+<script>
+	$(function(){
+		setTimeout(function() {
+			var chart = c3.generate({
+				bindto: '#lineChart',
+				data: {
+					columns: [
+					['Newuser', 30, 200, 100, 400, 150, 250],
+					['Returning user', 50, 120, 210, 140, 115, 425],
+					['Referral user', 40, 150, 98, 300, 175, 100]
+					]
+				},
+				color: {
+					pattern: ['#3CA2E0','#5CB85C','#F1B35B']
+				},
+				axis: {
+					x: {
+						show: false
+					},
+					y: {
+						show: false
+					},
+				}
+			});			
+		}, 275);
+		setTimeout(function() {
+			$('#world-map').vectorMap({
+				backgroundColor: '#FFF',
+				regionStyle: {
+					initial: {
+						fill: 'black',
+						"fill-opacity": 1,
+						stroke: 'none',
+						"stroke-width": 0,
+						"stroke-opacity": 1
+					},
+					hover: {
+						"fill-opacity": 0.8,
+						cursor: 'pointer',
+					},
+					selected: {
+						fill: 'red'
+					},
+					selectedHover: {
+					}
+}
+			});			
+		}, 275);
+		setTimeout(function() {
+			var chart2 = c3.generate({
+				bindto: '#cbar',
+				data: {
+					columns: [
+					[10,40,20,90,35,70,10,50,20,80,60,10,20,40,70]
+					],
+					type:'bar'
+				},
+				bar: {
+					width: {
+						ratio: 0.5 // this makes bar width 50% of length between ticks
+					}
+				},
+	color: {
+		pattern: ['#DB5B57']
+	},
+	labels: true,
+	legend: {
+		show: 0
+	},
+	axis: {
+		x: {
+			show: false
+		},
+		y: {
+			show: false
+		},
+	}
+	});
+			
+		}, 275);
+		setTimeout(function() {
+				var chart = c3.generate({
+					bindto: '#pie',
+					data: {
+		// iris data from R
+		columns: [
+		['data1', 11],
+		['data2', 23],
+		['data3', 66]
+		],
+		type : 'pie',
+		},
+		color: {
+			pattern: ['#5CB85C','#F0AD4E','#3CA2E0']
+		},
+		legend: {
+			show: 0
+		},
+		});
+			
+		}, 275);
+	});   	
+</script>
+</body>
+</html>

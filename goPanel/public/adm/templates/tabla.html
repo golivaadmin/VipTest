@@ -1,0 +1,71 @@
+<ion-view  view-title="Listas">
+  <ion-content>
+
+    <section id="body-container" class="animation">
+      <div class="conter-wrapper home-container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>{{tabla_name}}</h3>
+          </div>
+          <div class="col-md-6">
+            <h3 class="pull-right">
+              <button ng-if="panel_preferences.create.can_create" type="button" class="btn btn-success">+ {{panel_preferences.create.text}}</button>
+              <button type="button" ng-click="to_excel()" class="btn btn-warning">Descarga Excel</button>
+            </h3>
+          </div>
+        </div>
+        <!-- USUARIOS -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">{{data.data.length}} {{data.name}}
+                  <div class="panel-control pull-right">
+                    <a class="panelButton"><i class="fa fa-pencil"></i></a>
+                    <a class="panelButton"><i class="fa fa-minus"></i></a>
+                    <a class="panelButton"><i class="fa fa-remove"></i></a>
+                  </div>
+                </h3>
+                <p>{{numero_data}} {{tabla_name}}</p>
+              </div>
+              <div class="panel-body box-cliente">
+                <table class="table" id="table">
+                  <thead class="datos-cliente">
+                  <tr>
+                    <th ng-repeat="item in tabla_headers">{{item.nombre}}</th>
+
+                    <th ng-if="panel_preferences.can_edit">Editar</th>
+                    <th ng-if="panel_preferences.can_block">Bloquear</th>
+                    <th ng-if="panel_preferences.can_delete">Borrar</th>
+
+                    <th>Contenido</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  <tr ng-repeat="item in data" >
+
+                    <td ng-repeat="item2 in tabla_headers"> {{item[item2.key]}} </td>
+
+
+
+                    <td ng-if="panel_preferences.can_edit"> <i class="fa fa-pencil"></i> </td>
+                    <td ng-if="panel_preferences.can_block"> <i class="fa fa-lock"></i> </td>
+                    <td ng-click="delete(item._id)" ng-if="panel_preferences.can_delete"><a> <i class="fa fa-times-circle-o"></i> </a></td>
+
+                    <td><i class="fa fa-chevron-right"></i></td>
+                  </tr>
+
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- FIN USUARIOS -->
+        </div>
+    </section>
+
+  </ion-content>
+</ion-view>

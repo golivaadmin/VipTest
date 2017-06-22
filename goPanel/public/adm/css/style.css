@@ -1,0 +1,114 @@
+.scroll {
+
+
+}
+
+/*HOME*/
+.box-datos table {
+	width: 100%;
+}
+
+.box-datos table .valor-box-datos{
+	text-align: center;
+	font-size:1.8em;
+}
+
+.text-box-datos {
+	font-size:12px;
+	color: #666;
+	text-align: center;
+}
+
+.box-diag table {
+	font-size:0.8em;
+}
+
+
+/*USUARIOS*/
+.box-usuarios .table {
+	font-size:0.8em;
+	/*text-align: center;*/
+}
+
+.box-usuarios .table th {
+	/*text-align: center;*/
+}
+
+.box-usuarios .table .fa-pencil {
+	color:#888888 !important;
+}
+
+.box-usuarios .table .fa-lock {
+	color:#888888;
+}
+
+.box-usuarios .table .fa-unlock {
+	color:#888888;
+}
+
+.box-usuarios .table .fa-envelope {
+	color:#888888;
+}
+
+.box-usuarios .table .fa-times-circle-o {
+	font-size:1.3em;
+	color:#888888;
+}
+
+/*CLIENTES*/
+
+.box-cliente table{
+	width: 100%;
+	font-size:0.8em;
+
+}
+
+.box-cliente table .fa-folder {
+	font-size:1.5em;
+	color: #ccc;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.box-cliente .table td {
+	line-height: 4.1;
+}
+
+.box-cliente .table .title-cliente{
+
+}
+.box-cliente .table h1 {
+	font-size:1.3em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+/*FICHA*/
+
+.examen img{
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+.ant-med td p {
+	float: left;
+	margin-right: 15px;
+}
+
+/*LOGIN*/
+
+.login-page .row .olvido {
+	margin-top: 30px;
+	color:#fff;
+	display: block;
+}
+
+/*INGRESO USUARIOS*/
+
+.ant-med .diagnostico input{
+	width: 100%;
+	height: 55px;
+}

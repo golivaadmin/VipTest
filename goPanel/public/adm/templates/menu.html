@@ -1,0 +1,140 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <nav class="navbar topnav-navbar navbar-fixed-top" role="navigation">
+    <div class="navbar-header text-center">
+      <button id="showMenu"type="button" class="navbar-toggle"  >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"> {{global.nombre_cliente}} </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <form class="navbar-form navbar-left" role="search">
+        <span class="glyphicon glyphicon-search"></span>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar">
+        </div>
+      </form>
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav pull-right navbar-right">
+        <li class="dropdown color-picker">
+
+          <ul class="dropdown-menu pull-right animated fadeIn" role="menu">
+            <li class="padder-h-xs">
+              <table class="table color-swatches-table text-center no-m-b">
+                <tr>
+                  <td class="text-center colorr">
+                    <a data-theme="blue" class="theme-picker">
+                      <i class="fa fa-circle blue-base"></i>
+                    </a>
+                  </td>
+                  <td class="text-center colorr">
+                    <a  data-theme="green" class="theme-picker">
+                      <i class="fa fa-circle green-base"></i>
+                    </a>
+                  </td>
+                  <td class="text-center colorr">
+                    <a  data-theme="red" class="theme-picker">
+                      <i class="fa fa-circle red-base"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center colorr">
+                    <a  data-theme="purple" class="theme-picker">
+                      <i class="fa fa-circle purple-base"></i>
+                    </a>
+                  </td>
+                  <td class="text-center color">
+                    <a  data-theme="midnight-blue" class="theme-picker">
+                      <i class="fa fa-circle midnight-blue-base"></i>
+                    </a>
+                  </td>
+                  <td class="text-center colorr">
+                    <a  data-theme="lynch" class="theme-picker">
+                      <i class="fa fa-circle lynch-base"></i>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li class="dropdown admin-dropdown">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            <img src="images/flat-avatar.png" class="topnav-img" alt=""><span class="hidden-sm">{{global.user_name+" "+global.user_last_name}}</span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a >Profile</a></li>
+            <li><a >Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <ul class="nav navbar-nav pull-right hidd">
+      <li class="dropdown admin-dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <img src="images/flat-avatar.png" class="topnav-img" alt="">
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a>Profile</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- MENÚ LATERAL -->
+  <aside id="sidebar">
+    <div class="sidenav-outer">
+      <div class="side-menu">
+        <div class="menu-body">
+          <ul class="nav nav-pills nav-stacked sidenav">
+            <li >
+              <a>
+                <span class="glyphicon glyphicon-home"></span>
+              </a>
+              <ul class="nested-dropdown animated fadeIn">
+                <li><a>Home</a></li>
+              </ul>
+            </li>
+            <li >
+              <a>
+                <span class="glyphicon glyphicon glyphicon-folder-open"></span>
+              </a>
+              <ul class="nested-dropdown animated fadeIn">
+                <li><a>Clientes</a></li>
+              </ul>
+
+            <li ng-click="go_to('app.listas')">
+              <a>
+                <span class="glyphicon glyphicon glyphicon-folder-open"></span>
+              </a>
+              <ul class="nested-dropdown animated fadeIn">
+                <li><a>Listas</a></li>
+              </ul>
+            </li>
+            <li >
+              <a>
+                <span class="glyphicon glyphicon-th-large"></span>
+              </a>
+              <ul class="nested-dropdown animated fadeIn">
+                <li><a>Usuarios en observación</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- FIN MENÚ LATERAL -->
+  <!--CONTENDEDOR GENERAL -->
+  <ion-side-menu-content >
+    <ion-nav-view  name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+</ion-side-menus>

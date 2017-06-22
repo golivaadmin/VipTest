@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <script src="http://cdn.auth0.com/js/lock/10.2.2/lock.min.js"></script>
+    <script type="text/javascript">
+        var lock = new Auth0Lock('Q5ytzJ6bsHnrSDn76CzewMfo4GtaY4ij', 'gsw.auth0.com', {
+            language: 'es',
+            auth: {
+
+                redirectUrl: 'http://localhost:3000/',
+                responseType: 'token',
+                params: {
+                    scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+                }
+            }
+        },function (err,profile,token) {
+
+            alert(JSON.stringify(err));
+            alert(JSON.stringify(profile));
+            alert(JSON.stringify(token));
+
+        });
+        lock.show();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
