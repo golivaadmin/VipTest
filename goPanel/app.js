@@ -27,6 +27,8 @@ var pedidos_routes = require('./routes/custom/pedidoRoute');
 mongoose.connect('mongodb://localhost/viptest', function(err, res) {
   if (err) {
     console.log('ERROR: connecting to Database. ' + err);
+  }else{
+    console.log("Mongo OK");
   }
 });
 
